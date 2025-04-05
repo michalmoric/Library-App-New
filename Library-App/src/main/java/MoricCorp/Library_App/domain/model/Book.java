@@ -23,7 +23,10 @@ public class Book {
 
     private int inStockNum;
 
+    private boolean isDeleted = false;
+
     
+
 
     public Book() {
     }
@@ -63,6 +66,13 @@ public class Book {
     }
     public void setInStockNum(int inStockNo) {
         this.inStockNum = inStockNo;
+    }
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean isDeleted) {
+        this.isDeleted = isDeleted;
     }
 
     
